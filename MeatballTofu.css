@@ -73,7 +73,8 @@ html, body {
 .recipe{
     position: absolute;
     transform: translateX(-50%);
-    left: 50%;
+    left: 51.5%;
+    right: -16%;
     margin-top: 1.5em;
     font-size: 1.85em;
     color: #ffd000;
@@ -89,7 +90,7 @@ html, body {
     color: white;
     font-size: 20px;
     text-align: justify;
-    margin-top: 154px;
+    margin-top: 165px;
     margin-left: 34px;
     margin-right: 34px;
     width: 90%;
@@ -101,7 +102,7 @@ html, body {
 .info{
     width: 70%;
     height: 2.5em;
-    margin: 1em auto 0 auto;
+    margin: 2em auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -175,7 +176,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 .ingredientsDecoration, .instructionsDecoration, .nutritionsDecoration{

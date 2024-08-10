@@ -89,7 +89,7 @@ html, body {
     color: white;
     font-size: 20px;
     text-align: justify;
-    margin-top: 164px;
+    margin-top: 165px;
     margin-left: 34px;
     margin-right: 34px;
     width: 90%;
@@ -175,7 +175,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 .ingredientsDecoration, .instructionsDecoration, .nutritionsDecoration{

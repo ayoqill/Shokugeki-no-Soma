@@ -73,9 +73,12 @@ html, body {
 .recipe{
     position: absolute;
     transform: translateX(-50%);
-    left: 50%;
+    left: 51.5%;
+    right: -16%;
     margin-top: 1.5em;
-    font-size: 1.85em;
+    font-size: 1.55em;
+    padding-top: 15px;
+    padding-left: 8px;
     color: #ffd000;
     text-shadow: 1px 1px 1px black;
     font-family: "BOONE";
@@ -89,7 +92,7 @@ html, body {
     color: white;
     font-size: 20px;
     text-align: justify;
-    margin-top: 164px;
+    margin-top: 165px;
     margin-left: 34px;
     margin-right: 34px;
     width: 90%;
@@ -175,7 +178,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 .ingredientsDecoration, .instructionsDecoration, .nutritionsDecoration{
