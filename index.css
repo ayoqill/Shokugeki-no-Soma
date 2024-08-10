@@ -1,5 +1,6 @@
 html{
     min-height: 100vh;
+    font-size: 1vw; /* Base font size, responsive to viewport width */
 }
 
 body{
@@ -16,7 +17,7 @@ body{
     display: inline-table;
     text-align: center;
     position: relative;
-    transform: translateY(-1.7vw);
+    transform: translateY(-2vw);
 }
 
 #header{
@@ -43,7 +44,7 @@ body{
     margin: 0 auto;
     width: 460px;
     height: 225px;
-    opacity: 1;
+    opacity: 0.3;
     animation-delay: 3s;
     animation: intro 3s forwards;
 }
@@ -76,6 +77,7 @@ body{
 #credit{
     font-size: 20px;
     font-family: "Avenis";
+    font-weight: 800;
     display: block;
     margin-top: 1.3em;
     color: white;
@@ -87,6 +89,23 @@ body{
 
 #credit:hover{
     color: #FF0000;
+}
+
+#IntroDescription{
+    font-family: "TimelessMemoriesRegular";
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.637);
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2em;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2.6s;
 }
 
 #description{

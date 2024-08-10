@@ -1,0 +1,316 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(#000000, #3D0000, #950101, #FF0000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.image{
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+    top: 17em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    border: 0.6em double #E02401;
+    box-shadow: 0 0 0 0.5em #d6d3d3;
+    background: linear-gradient(to bottom, white, black);
+    background-size: cover;
+    background-origin: border-box;
+    animation: expand 1s forwards, Down 0.65s 0.5s forwards, Up 1s 0.7s forwards;
+    transform: scale(0.01);
+    transition: 2s;
+}
+
+.image:hover{
+    height: 12.3em;
+    width: 12.3em;
+}
+
+.container{
+    position: relative;
+    top: 8em;
+    width: 45em;
+    height: 115em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5em double #ffffff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background: #4d1010;
+}
+
+.content{
+    position: absolute;
+    width: 99%;
+    height: 99.5%;
+    box-sizing: border-box;
+    border: double 0.4em #ffffff;
+    border-radius: 0.6em;
+    background-image: linear-gradient(#000000,#3D0000,#950101,#000000) ;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.underline{
+    position: absolute;
+    border-top: 1.4em solid #ffffff;
+    border-bottom: 1.4em solid #ffffff;
+    border-left: 1.0em solid transparent;
+    border-right: 1.0em solid transparent;
+    margin-top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: appear 0.9s 1.4 forwards, extend 1s 1.6 forwards;
+}
+
+.recipe{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 1.5em;
+    font-size: 1.85em;
+    color: #ffd000;
+    text-shadow: 1px 1px 1px black;
+    font-family: "BOONE";
+    font-weight: 700;
+    opacity: 0;
+    animation: recipeAppear 1s 2.4s forwards;
+}
+
+.description{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 154px;
+    margin-left: 34px;
+    margin-right: 34px;
+    width: 90%;
+    font-family: "TimelessMemoriesRegular";
+    opacity: 0;
+    animation: fadeIn 2s 3.5s forwards;
+}
+
+.info{
+    width: 70%;
+    height: 2.5em;
+    margin: 1em auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.25em double #ffffff;
+    border-radius: 1.7em;
+}
+
+
+.timeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 70%;
+    margin-left: 1em;
+    justify-content: space-between;
+}
+
+.clockContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 4.1%;
+    left: 134px;
+}
+
+.time{
+    font-family: "TimelessMemoriesRegular";
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    left: 28%;
+}
+
+.serparator{
+    position: absolute;
+    box-sizing: border-box;
+    border: 0.1em solid white;
+    height: 1.5em;
+}
+
+.servingsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 6.6em;
+    margin-left: 5em;
+}
+
+
+.servings{
+    font-family: "TimelessMemoriesRegular";
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    left: 56%;
+}
+
+.servingsAmount{
+    font-family: "TimelessMemoriesRegular";
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    left: 73%;
+}
+
+.ingredientsContainer, .instructionsContainer, .nutritionsContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.ingredientsDecoration, .instructionsDecoration, .nutritionsDecoration{
+    position: relative;
+    top:-0.4em;
+    height: 0;
+    border-top: 0.97em solid #ffffff2f;
+    border-bottom: 0.8em solid #ffffff2f;
+    border-left: 0.8em solid #ffffff2f;
+    border-right: 0.8em solid #ffffff2f;
+    opacity: 0;
+    animation: fadeIn 1s 4s forwards, subExtend 1s 4.5s forwards;
+}
+
+.ingredientsText, .instructionsText, .nutritionsText{
+    position: absolute;
+    font-size: 1.4em;
+    color: #ffd000;
+    text-shadow: 1px 1px 1px black;
+    font-family: "BOONE";
+    opacity: 0;
+    top: -0.15em;
+    animation: fadeIn 1s 5s forwards;
+}
+
+.ingredientsList{
+    color: white;
+    font-family: "TimelessMemoriesRegular";
+    width: 90%;
+    margin-top: 0.5em;
+    line-height: 1.4em;
+    opacity: 0;
+    animation: fadeIn 2s 5.5s forwards;
+}
+
+.instructionsList{
+    color: white;
+    font-family: "TimelessMemoriesRegular";
+    width: 90%;
+    margin-top: 0.5em;
+    line-height: 1.4em;
+    opacity: 0;
+    animation: fadeIn 2s 5.5s forwards;
+}
+
+.instructionsList li{
+    margin-bottom: 0.5em;
+}
+
+.nutritionsTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin: 2em 2em 0 0;
+    opacity: 0;
+    animation: fadeIn 2s 5.5s forwards;
+}
+
+.nutritions1{
+    color: lightslategray;
+    font-weight: 600;
+    font-family: "TimelessMemoriesRegular";
+    list-style-type: none;
+}
+
+.nutritions2{
+    color: lightslategray;
+    font-weight: 600;
+    list-style-type: none;
+    font-family: "TimelessMemoriesRegular";
+    margin-left: 8em;
+}
+
+.nutritions1Info, .nutritions2Info {
+    color: white;
+    font-weight: 600;
+    list-style-type: none;
+    font-family: "TimelessMemoriesRegular";
+    font-size: 0.9em;
+    margin-left: 2.5em;
+}
+
+.nutritions1 li, .nutritions2 li {
+    margin-bottom: 0.67em;
+}
+
+.nutritions1Info li, .nutritions2Info li {
+    margin-bottom: 0.97em;
+}
+
+
+@keyframes expand {
+    from {transform: scale(0.01)} to {transform: scale(1)};
+}
+@keyframes Down {
+    100% {top: 19em};
+}
+@keyframes Up {
+    100% {top: -7em};
+    from {box-shadow: 0 0 0px black} to {box-shadow: 0 0 2.5em black};
+}
+@keyframes appear {
+    from {opacity: 0} to {opacity: 1};
+    from {margin-top: 0em} to {margin-top: 6em};
+
+}
+@keyframes extend {
+    from {width: 0%} to {width: 70%};
+}
+@keyframes subExtend{
+    from  {width: 0%} to {width: 50%};
+}
+@keyframes recipeAppear{
+    from {margin-top: 1.5em} to {margin-top: 3.2em};
+    from {opacity: 0} to {opacity: 1};
+}
+@keyframes fadeIn {
+    from {opacity: 0} to {opacity: 1};
+}
+
+
+@font-face {
+    font-family: "BOONE";
+    src: url(./resources/BOONE.otf);
+}
+
+
+@font-face {
+    font-family: "TimelessMemoriesRegular";
+    src: url(./resources/TimelessMemoriesRegular-2vvwo.otf);
+}
+
+@font-face {
+    font-family: "Avenis";
+    src: url(./resources/avenis/Avenis.otf);
+}
