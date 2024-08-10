@@ -289,6 +289,68 @@ body{
     z-index: -1; /* Ensure the video is behind other content */
 }
 
+#shitpost {
+    display: none;
+    position: absolute;
+    width: 4em;
+    height: 1em;
+    pointer-events: auto;
+}
+
+.yapping {
+    position: relative;
+    color: white;
+    background: black;
+    top: 3.9em;
+    width: 15em;
+    opacity: 0;
+    text-align: center;
+    pointer-events: none;
+
+}
+
+#Kaneki {
+    position: absolute;
+    width: 5em;
+    overflow: hidden;
+    top: 0;
+}
+
+#shitpost:hover > .yapping{
+    transition: 130s linear;
+    top: 14.5em;
+    font-size: 10em;
+    animation: appear 4s 1s forwards;
+}
+
+#Kaneki:hover{
+    transition: 130s linear;
+    width: 190em;
+}
+
+#KanekiTitle {
+    position: absolute;
+    width: 100%;
+    font-family: "BOONE";
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: #FF0000; 
+    margin: 0.3em 0 0 4.59em;
+    width: 7.6em;
+    text-align: center;
+    left: 1.5em;
+    top: 0.05em;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#shitpost:hover > #KanekiTitle {
+    opacity: 1;
+    transition: 2s;
+    background: rgb(182, 159, 97);
+}
+
 @keyframes intro {
     100% {bottom: 0};
     from {opacity: 0} to {opacity: 1};

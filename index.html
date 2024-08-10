@@ -1,78 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Wars</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Wars</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
 
-<body>
+    <body onclick="myFunction()">
 
-    <video autoplay muted loop id="backgroundVideo">
-        <source src="./resources/flame.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-    <div id="left">
-        <div id="TopLeft"><img id="TopLeftImage" src="./resources/friedeggnbacon.jpg">
-            <img id="TopLeftFrame" src="./resources/foodframe1.png" >
-            <a id="TopLeftOverlay" href="BaconAndEgg.html">
-                <div id="TopLeftTitle">Calcifer's Fried Bacon</div>
-                <div id="TopLeftDescription">Sizzling with magical warmth, Calcifer’s fried bacon and egg is a breakfast delight straight from the heart of Howl’s Moving Castle.</div>
-            </a>
-        </div>
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="./resources/flame.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         
-        <div id="BottomLeft">
-            <img id="BottomLeftImage" src="./resources/meatballTofu.jpg">
-            <img id="BottomLeftFrame" src="./resources/foodframe1.png" >
-            <a id="BottomLeftOverlay" href="MeatballTofu.html">
-                <div id="BottomLeftTitle">Yukihira's Meatball Tofu</div>
-                <div id="BottomLeftDescription">A culinary masterpiece that redefines the fusion of texture and flavor. Each meatball is crafted from finely ground tofu, blended with savory spices and herbs, creating a tender yet robust bite.</div>
-            </a>
-        </div>
-    </div>
-
-    <div id="middle">
-        <div id="header">
-            <h1 id="title">Shokugeki No Soma</h1>
-            <img id="underline" src="./resources/underline1.png">
-        </div>
-        <div id="outerContainer">
-            <div id="gifcontainer">
-                <img id="gif" src="./resources/yukihira.gif">                
+        <div id="left">
+            <div id="TopLeft"><img id="TopLeftImage" src="./resources/friedeggnbacon.jpg">
+                <img id="TopLeftFrame" src="./resources/foodframe1.png" >
+                <a id="TopLeftOverlay" href="BaconAndEgg.html">
+                    <div id="TopLeftTitle">Calcifer's Fried Bacon</div>
+                    <div id="TopLeftDescription">Sizzling with magical warmth, Calcifer’s fried bacon and egg is a breakfast delight straight from the heart of Howl’s Moving Castle.</div>
+                </a>
+            </div>
+            
+            <div id="BottomLeft">
+                <img id="BottomLeftImage" src="./resources/meatballTofu.jpg">
+                <img id="BottomLeftFrame" src="./resources/foodframe1.png" >
+                <a id="BottomLeftOverlay" href="MeatballTofu.html">
+                    <div id="BottomLeftTitle">Yukihira's Meatball Tofu</div>
+                    <div id="BottomLeftDescription">A culinary masterpiece that redefines the fusion of texture and flavor. Each meatball is crafted from finely ground tofu, blended with savory spices and herbs, creating a tender yet robust bite.</div>
+                </a>
             </div>
         </div>
-        <a id="credit" href="https://youtu.be/NeQ11ySLJe0?si=hH84qlNpV11dpLNP">Anime Sauce: Food Wars</a>
-        <div id="IntroDescription">
-            <p>Enter a realm where culinary arts meet the shadows, and every dish tells a story of forbidden flavors and ancient secrets. 
-            Every bite is a step deeper into the abyss, where the line between feast and fear fades away. 
-            Welcome to the Forbidden Kitchen, where the dark and delicious collide.</p> <br>
-        </div>
-        <div id="description">
-            <img id="megumi" src="./resources/megumi.webp">
-            <img id="descriptionborder" src="./resources/flameborder.png"><br>
-            <div id="ProjectBy">Forbidden Kitchen's Project by Aqillaimann</div>
-        </div>
-    </div>
 
-    <div id="right">
-        <div id="TopRight">
-            <img id="TopRightImage" src="./resources/rainbowTerrine.webp">
-            <img id="TopRightFrame" src="./resources/foodframe1.png" >
-            <a id="TopRightOverlay" href="RainbowTerrine.html">
-                <div id="TopRightTitle">Touka Kirishima's Rainbow Terrine</div>
-                <div id="TopRightDescription">A unique ghoul twist, the terrine incorporates a layer of finely sliced, ethically obtained human intestine, adding a depth of flavor and an umami richness that’s unparalleled.</div>
-            </a>
+        <div id="middle">
+            <div id="header">
+                <h1 id="title">Shokugeki No Soma</h1>
+                <img id="underline" src="./resources/underline1.png">
+            </div>
+            <div id="outerContainer">
+                <div id="gifcontainer">
+                    <img id="gif" src="./resources/yukihira.gif">                
+                </div>
+            </div>
+            <a id="credit" href="https://youtu.be/NeQ11ySLJe0?si=hH84qlNpV11dpLNP">Anime Sauce: Food Wars</a>
+            <div id="IntroDescription">
+                <p>Enter a realm where culinary arts meet the shadows, and every dish tells a story of forbidden flavors and ancient secrets. 
+                Every bite is a step deeper into the abyss, where the line between feast and fear fades away. 
+                Welcome to the Forbidden Kitchen, where the dark and delicious collide.</p> <br>
+            </div>
+            <div id="description">
+                <img id="megumi" src="./resources/megumi.webp">
+                <img id="descriptionborder" src="./resources/flameborder.png"><br>
+                <div id="ProjectBy">Forbidden Kitchen's Project by Aqillaimann</div>
+            </div>
         </div>
-        <div id="BottomRight">
-            <img id="BottomRightImage" src="./resources/ramen.webp">
-            <img id="BottomRightFrame" src="./resources/foodframe1.png" >
-            <a id="BottomRightOverlay" href="Ramen.html">
-                <div id="BottomRightTitle">Naruto's Ramen</div>
-                <div id="BottomRightDescription">A steaming bowl of ramen, inspired by the spirited ninja himself. This recipe is a delicious and easy way to enjoy a idic Japanese meal.</div>
-            </a>
+
+        <div id="right">
+            <div id="TopRight">
+                <img id="TopRightImage" src="./resources/rainbowTerrine.webp">
+                <img id="TopRightFrame" src="./resources/foodframe1.png" >
+                <a id="TopRightOverlay" href="RainbowTerrine.html">
+                    <div id="TopRightTitle">Touka Kirishima's Rainbow Terrine</div>
+                    <div id="TopRightDescription">A unique ghoul twist, the terrine incorporates a layer of finely sliced, ethically obtained human intestine, adding a depth of flavor and an umami richness that’s unparalleled.</div>
+                </a>
+            </div>
+            <div id="BottomRight">
+                <img id="BottomRightImage" src="./resources/ramen.webp">
+                <img id="BottomRightFrame" src="./resources/foodframe1.png" >
+                <a id="BottomRightOverlay" href="Ramen.html">
+                    <div id="BottomRightTitle">Naruto's Ramen</div>
+                    <div id="BottomRightDescription">A steaming bowl of ramen, inspired by the spirited ninja himself. This recipe is a delicious and easy way to enjoy a idic Japanese meal.</div>
+                </a>
+            </div>
         </div>
-    </div>
-</body>
+
+        <div id = "shitpost">
+            <h1 id = "KanekiTitle">Kaneki Recipe's</h1>
+            <a id = "thing" href = "https://youtu.be/uMeR2W19wT0?si=FmyN-A-ozP8ljufB&t=41" target = "_blank">
+                <img id = "Kaneki" src = "./resources/Kaneki.jpg">
+                <audio id = "TokyoGhoulOP"><source src = "./resources/TokyoGhoulOPening.mp3"></source></audio>
+            </a> <br><br><br>
+            <div class = "yapping">"That was fun" </div>
+            <div class = "yapping">ㅤ</div>
+            <div class = "yapping">(i'm gonna take)</div>
+            <div class = "yapping">(A 21 hour nap from now)</div>
+        </div>
+
+        <script>
+            var Kaneki = document.getElementById('Kaneki'),
+            music = document.getElementById('TokyoGhoulOP')
+            audios = document.querySelectorAll('audio');
+            console.log(audios);
+
+            Kaneki.addEventListener('mouseover', function() {
+            [].forEach.call(audios, function(audio) {
+            music.play();
+            });
+            }, false);
+
+            Kaneki.addEventListener('mouseleave', function() {
+            music.pause();
+            music.currentTime = 0;
+            }, false);
+
+            function myFunction() {
+                document.getElementById("shitpost").style.display = "block";
+            }
+        </script>
+    </body>
 </html>
